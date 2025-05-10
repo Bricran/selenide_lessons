@@ -7,17 +7,16 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class SelenideWikiSearch {
+public class SelenideWikiSearchTest {
 
     @BeforeAll
     static void setUpBeforeAllTest() {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
     }
 
     @Test
-    void findWikiGithubJUnit5() {
+    void findWikiGithubJUnit5Test() {
         // открыть главную страницу
         open("https://github.com/");
         // кликнуть на поле поиска
